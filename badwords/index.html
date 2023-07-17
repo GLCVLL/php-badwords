@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css' integrity='sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==' crossorigin='anonymous'/>
+    <title>BadWords</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>BadWord Form</h1>
+            <form action="words.php" method="GET">
+                <div class="mb-3">
+                    <label for="words" class="form-label">Parola da censurare</label>
+                    <input type="text" class="form-control" id="badword" name="badword" placeholder="Parola da censurare">
+                </div>
+                <div class="mb-3">
+                    <label for="paragraph" class="form-label">Paragrafo</label>
+                    <textarea class="form-control" id="paragraph" name="paragraph" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Invia</button>
+                <button class="btn btn-secondary" type="reset">Annulla</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
